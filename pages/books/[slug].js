@@ -11,6 +11,7 @@ import { Navbar } from "../../components/navbar";
 import Footer1 from "../../components/footer";
 
 function urlFor(source) {
+  if(!source) return ''
   return imageUrlBuilder(client).image(source);
 }
 
