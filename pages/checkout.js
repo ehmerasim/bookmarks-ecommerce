@@ -46,7 +46,7 @@ const CheckoutPage = () => {
                 <div className="flex flex-col items-center justify-center py-12 px-8">
                   <p className="text-xl md:text-2xl lg:text-4xl font-semibold leading-9 text-gray-800">Your Shopping Cart</p>
 
-                  {cartState.items.map((item) => { return <div className="pt-10 flex py-20 border-b border-gray-300">
+                  {cartState.items.map((item, index) => { return <div key={index} className="pt-10 flex py-20 border-b border-gray-300">
                     <div className="flex flex-col md:flex-row gap-8 items-center">
                       <img className="hidden md:block" style={{maxWidth: '100px'}} src={urlFor(item.bookImage).url()} alt="a shirt" />
                       <img className="md:hidden" style={{maxWidth: '100px'}} src={urlFor(item.bookImage).url()} alt="a shirt" />

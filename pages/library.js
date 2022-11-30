@@ -24,7 +24,7 @@ const library = ({products}) => {
         {products.length > 0 && products.map(
           ({bookImage, _id, bookTitle = '', slug = '', price = ''}) =>
             slug && (
-            <Link href="/books/[slug]" as={`/books/${slug.current}`}>
+            <Link href="/books/[slug]" as={`/books/${slug.current}`} key={bookTitle}>
             <div className='rounded-lg group cursor-pointer overflow-hidden'>
               <li key={_id} className="list-none flex flex-col items-stretch">
                 <div style={{maxWidth: '300px', height: '500px'}} className="flex items-center">
