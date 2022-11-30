@@ -65,7 +65,7 @@ const BookProduct = ({ product }) => {
     <div className="mt-10 mb-10">
       <div className="px-4 2xl:container 2xl:mx-auto flex-col md:flex-row  md:px-6 2xl:px-20 flex justify-center items-center ">
         <div className=" flex xl:justify-between items-center flex-col md:w-2/3 lg:w-full ">
-          <img className="lg:border-b-0 border-white-200 w-9/12 border-0 m-0" style={{maxWidth: '60%', maxHeight: '500px', objectFit: 'contain'}} src={urlFor(bookImage) ?? urlFor(bookImage).url()} alt="jacket" />
+          <img className="lg:border-b-0 border-white-200 w-9/12 border-0 m-0" style={{maxWidth: '60%', maxHeight: '500px', objectFit: 'contain'}} src={urlFor(bookImage) ? urlFor(bookImage).url() : ''} alt="jacket" />
         </div>
         <div className="lg:border-l border-gray-200 md:w-2/3 mt-7 md:mt-0 flex  md:px-6 xl:px-8  2xl:justify-between items-start flex-col md:py-12">
           <div className="flex w-full justify-between items-center">
