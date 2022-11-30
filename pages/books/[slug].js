@@ -35,7 +35,7 @@ const sxcomponents = {
   },
 };
 
-const bookProduct = ({ product }) => {
+const BookProduct = ({ product }) => {
   const dispatch = useDispatch()
   const [numberOfItems, setNumberOfItems] = useState(0)
 
@@ -141,4 +141,4 @@ export async function getStaticProps(context) {
   }
 }
 
-export default bookProduct;
+export default BookProduct;
